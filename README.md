@@ -51,6 +51,24 @@ npm run start
 
 Si subes un nuevo PDF o imagen, solo cambia rutas en `data/products.ts`.
 
+## Plantilla rápida (nuevo producto)
+
+Copia este bloque dentro del array `products` en `data/products.ts`:
+
+```ts
+{
+	id: "ebook-nuevo",
+	title: "Ebook: Nuevo Título",
+	subtitle: "Subtítulo breve de venta",
+	priceUsd: 23,
+	description: "Descripción corta con beneficio principal.",
+	cover: "/covers/ebook-nuevo.svg",
+	fileUrl: "/ebooks/ebook-nuevo.pdf",
+	paypalHostedButtonId: "YOUR_PAYPAL_HOSTED_BUTTON_ID",
+	whatsappMessage: "Hola, quiero comprar el ebook Nuevo Título.",
+},
+```
+
 ## Integraciones preparadas
 
 - **PayPal:** en `data/products.ts` cambia `paypalHostedButtonId` por tu `hosted_button_id` real.
