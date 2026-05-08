@@ -19,6 +19,21 @@ export function ProductCard({ product }: ProductCardProps) {
         <p className="mt-2 text-sm text-muted">{product.subtitle}</p>
         <p className="mt-4 text-sm leading-6 text-foreground/90">{product.description}</p>
         <p className="mt-4 text-xl font-semibold text-accent">${product.priceUsd} USD</p>
+        <p className="mt-2 text-xs text-muted">
+          Archivo digital: {" "}
+          {product.fileUrl ? (
+            <a
+              href={product.fileUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gold-hover text-accent underline-offset-2 hover:underline"
+            >
+              {product.fileUrl}
+            </a>
+          ) : (
+            "pendiente de subir"
+          )}
+        </p>
 
         <div className="mt-5 flex flex-wrap gap-3">
           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">

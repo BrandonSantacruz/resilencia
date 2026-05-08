@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600" role="img" aria-label="Portada temporal ebook">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <rect x="60" y="60" width="1080" height="1480" fill="none" stroke="#d4af37" stroke-opacity="0.35" stroke-width="4"/>
+  <text x="600" y="680" text-anchor="middle" fill="#d4af37" font-size="86" font-family="serif">CAMINO DE HIERRO</text>
+  <text x="600" y="770" text-anchor="middle" fill="#e8e2d6" font-size="34" font-family="sans-serif">Portada temporal</text>
+  <text x="600" y="835" text-anchor="middle" fill="#9b9385" font-size="28" font-family="sans-serif">Reemplaza este archivo por tu portada real</text>
+</svg>

@@ -41,6 +41,16 @@ npm run start
 - Artículos del blog: `data/posts.ts`
 - Home: `app/page.tsx`
 
+## Subir portadas y ebooks
+
+- Portadas: `public/covers/`
+- Ebooks: `public/ebooks/`
+- Producto inicial usa:
+	- Portada: `/covers/ebook-camino-de-hierro.svg`
+	- Ebook: `/ebooks/camino-de-hierro.pdf`
+
+Si subes un nuevo PDF o imagen, solo cambia rutas en `data/products.ts`.
+
 ## Integraciones preparadas
 
 - **PayPal:** en `data/products.ts` cambia `paypalHostedButtonId` por tu `hosted_button_id` real.

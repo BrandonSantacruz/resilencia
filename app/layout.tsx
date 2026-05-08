@@ -43,7 +43,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${cinzel.variable} ${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-background text-foreground">
+      <body
+        className="min-h-full flex flex-col bg-background text-foreground"
+        style={{ backgroundColor: "#0a0a0a", color: "#e8e2d6" }}
+      >
         <header className="fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-background/80 backdrop-blur-md">
           <nav className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6">
             <Link href="/" className="section-title text-lg text-accent gold-hover sm:text-xl">
