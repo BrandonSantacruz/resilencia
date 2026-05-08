@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AshVein Web
 
-## Getting Started
+Sitio estático con **Next.js 15 (App Router)**, **TypeScript** y **Tailwind CSS**, con estética dark fantasy nórdica.
 
-First, run the development server:
+## Stack
+
+- Next.js 15
+- React 18
+- TypeScript
+- Tailwind CSS v4
+
+## Rutas incluidas
+
+- `/` Home
+- `/micamino`
+- `/elcamino`
+- `/blog`
+- `/blog/[slug]`
+- `/tienda`
+
+## Desarrollo local
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build de producción
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+npm run start
+```
 
-## Learn More
+## Cómo editar contenido rápido
 
-To learn more about Next.js, take a look at the following resources:
+- Productos: `data/products.ts`
+- Artículos del blog: `data/posts.ts`
+- Home: `app/page.tsx`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Integraciones preparadas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **PayPal:** en `data/products.ts` cambia `paypalHostedButtonId` por tu `hosted_button_id` real.
+- **WhatsApp:** en `data/products.ts` cambia `whatsappMessage` por tu texto comercial.
+- **Formspree:** en `app/page.tsx` reemplaza `https://formspree.io/f/your-form-id` por tu endpoint.
 
-## Deploy on Vercel
+## Despliegue recomendado
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Despliegue directo en Vercel (plan gratuito), sin base de datos ni backend adicional.
